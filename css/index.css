@@ -134,3 +134,13 @@ html,
 body {
   height: 100%;
 }
+.all_header_fonts {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.all_resume_copy {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 200;
+}
