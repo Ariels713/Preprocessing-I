@@ -134,24 +134,39 @@ html,
 body {
   height: 100%;
 }
-.all_header_fonts {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 400;
+.header_font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
 }
-.all_resume_copy {
+.secondary_header {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.9em;
-  letter-spacing: 3px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px auto;
 }
-.script_copy {
-  font-family: 'Pinyon Script', cursive;
-  font-size: 0.9em;
-  letter-spacing: 3px;
+.script_font {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+.italic_font {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.para_font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
 }
 .container {
   display: flex;
-  width: 960px;
+  width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto 0;
@@ -166,15 +181,20 @@ body {
   margin: auto 0;
 }
 .container .header .introduction {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
   margin-top: 50px;
   margin-left: 30px;
-  width: 178px;
+  width: 190px;
+}
+.container .header .uez_style {
+  color: #f9c22e;
 }
 .container .header .ariel_rodriguez {
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 34px;
   font-weight: 800;
   margin-top: 20px;
   margin-left: 30px;
@@ -182,11 +202,11 @@ body {
   z-index: 1;
   letter-spacing: 5px;
 }
-.container .header .uez_style {
-  color: #f9c22e;
-}
 .container .header .self_intro {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  font-style: italic;
   margin-top: 40px;
   margin-left: 50px;
   margin-bottom: 20px;
@@ -195,44 +215,59 @@ body {
   text-align: right;
   padding-right: 15px;
   line-height: 20px;
-  font-style: italic;
 }
 .container .header .ariel_photo {
   width: 35%;
   height: auto;
   margin-top: 60px;
-  margin-left: -159px;
+  margin-left: -166px;
   position: relative;
-  padding-bottom: 10px;
   padding-right: 10px;
   z-index: -1;
 }
 .container .header ol {
-  margin-top: 145px;
+  margin-top: 14%;
+  margin-right: 10%;
 }
 .container .header ol li {
-  color: #0c090d;
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.9em;
-  letter-spacing: 3px;
-  margin: 10px 0;
-  list-style: square;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px auto;
+  list-style-type: '-    ';
+}
+.container .header ol p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
 }
 .container .experience {
-  background-color: #f9c22e;
+  background-color: #e2e2e4;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: 300px;
   margin: auto 0;
-  border: solid 5px green;
 }
 .container .experience h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 400;
-  margin-top: 50px;
-  margin-left: 30px;
-  width: 175px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+}
+.container .experience .experience_intro {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: 2;
+  margin-top: 5%;
+  width: 70%;
 }

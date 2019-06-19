@@ -60,63 +60,89 @@ html, body {
 
 // HTML Styling
 
-.section_header {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.6em;
-}
-
 @background_color: #f9c22e;
 // color => Saffron
 @h1_text_color: #0c090d;
 // Smoky Black
 
+.header_font {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6em;
+	letter-spacing: 4px;
+	font-weight: 700;
+}
+
+.secondary_header {
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8em;
+	letter-spacing: 2px;
+	font-weight: 600;
+	margin: 10px auto;
+}
+
+.script_font {
+	font-family: 'Playfair Display', serif;
+	font-size: .7em;
+	letter-spacing: 2px;
+	font-style: italic;
+}
+
+.italic_font {
+	font-family: 'Playfair Display', serif;
+	font-size: .6em;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+.para_font {
+	font-family: 'Montserrat', sans-serif;
+	font-size: .6em;
+	letter-spacing: 1px;
+}
+
+
 // Header Styling
 
 .container {
 	display: flex;
-	width: 960px;
+	width: 100%;
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin: auto 0;
 	border: solid 10px goldenrod;
 
-	.header {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 400px;
-		margin: auto 0;
-		// border: solid 10px darkorchid;
+	 	.header {
+ 		display: flex;
+ 		flex-direction: column;
+ 		flex-wrap: wrap;
+ 		width: 100%;
+ 		height: 400px;
+ 		margin: auto 0;
 
-		.introduction {
-			font-family: 'Roboto', sans-serif;
-			font-size: 1em;
+			.introduction {
+			.script_font();
 			margin-top: 50px;
 			margin-left: 30px;
-			// border: solid 2px green;
-			width: 178px;
-
-		}
-
-		.ariel_rodriguez {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 25px;
-			font-weight: 800;
-			margin-top: 20px;
-			margin-left: 30px;
-			// border: solid 2px red;
-			width: 350px;
-			z-index: 1;
-			letter-spacing: 5px;
+			width: 190px;
 		}
 
 		.uez_style {
 			color: #f9c22e;
 		}
 
+		.ariel_rodriguez {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 34px;
+			font-weight: 800;
+			margin-top: 20px;
+			margin-left: 30px;
+			width: 350px;
+			z-index: 1;
+			letter-spacing: 5px;
+		}
+
 		.self_intro {
-			font-family: 'Times New Roman', Times, serif;
+			.italic_font();
 			margin-top: 40px;
 			margin-left: 50px;
 			margin-bottom: 20px;
@@ -125,61 +151,64 @@ html, body {
 			text-align: right;
 			padding-right: 15px;
 			line-height: 20px;
-			font-style: italic;
-
-
-
 		}
 
 		.ariel_photo {
 			width: 35%;
 			height: auto;
 			margin-top: 60px;
-			margin-left: -159px;
+			margin-left: -166px;
 			position: relative;
-			padding-bottom: 10px;
 			padding-right: 10px;
 			z-index: -1;
 		}
 
 		ol {
-			margin-top: 145px;
-			li {
-				color: #0c090d;
-				.all_resume_copy();
-				margin: 10px 0;
-				list-style: square;
+			margin-top: 14%;
+			margin-right: 10%;
 
+			li {
+				.secondary_header();
+				list-style-type: '-    '
+			}
+
+			p {
+				.para_font();
 
 			}
 		}
-
 	}
-
 	.experience {
-		background-color: #f9c22e;
+		background-color: rgb(226, 226, 228);
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
 		height: 300px;
 		margin: auto 0;
-		border: solid 5px green;
 
 		h1 {
-			.all_header_fonts();
-			margin-top: 50px;
-			margin-left: 30px;
-			width: 175px;
-
-
+			display: flex;
+			flex-direction: row;
+			.header_font();
+			margin-top: 5%;
+			margin-left: 5%;
+			width: 20%;
 		}
 
 		.experience_intro {
-
+			.script_font();
+			line-height: 2;
+			margin-top: 5%;
+			width: 70%;
 		}
 	}
-
 }
+
+
+
+
+
+
 
 
