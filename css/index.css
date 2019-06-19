@@ -1,1 +1,418 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.layout {
+  width: 75%;
+  margin-left: 25%;
+}
+.content_layout {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+}
+.header_font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+.secondary_header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+.script_font {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+.italic_font {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.para_font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 5%;
+  margin-left: 3%;
+}
+.container .header .introduction {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 190px;
+}
+.container .header .uez_style {
+  color: #f9c22e;
+}
+.container .header .ariel_rodriguez {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 350px;
+  z-index: 1;
+  letter-spacing: 5px;
+}
+.container .header .self_intro {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 240px;
+  height: 180px;
+  text-align: right;
+  padding-right: 15px;
+  line-height: 20px;
+}
+.container .header .ariel_photo {
+  width: 35%;
+  height: auto;
+  margin-top: 60px;
+  margin-left: -166px;
+  position: relative;
+  padding-right: 10px;
+  z-index: -1;
+}
+.container .header ol {
+  margin-top: 14%;
+  margin-right: 10%;
+}
+.container .header ol li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px auto;
+  list-style-type: '-    ';
+}
+.container .header ol p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+.container .experience {
+  background-color: #e2e2e4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.container .experience h1 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+}
+.container .experience .experience_intro {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: 2;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.container .experience .la_sonrisa_foods {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px auto;
+  width: 75%;
+  margin-left: 25%;
+  height: 0%;
+}
+.container .experience .position {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  width: 75%;
+  margin-left: 25%;
+}
+.container .experience .description {
+  width: 75%;
+  margin-left: 25%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+.container .skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+}
+.container h1 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+}
+.container .skills_intro {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: 2;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.container .skill_types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20px;
+  margin-left: 21%;
+  margin-top: 0%;
+}
+.container .skill_types h2 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+  margin-top: 0%;
+}
+.container .bottom_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 180px;
+  margin-left: 27%;
+}
+.container .bottom_list ul {
+  align-self: flex-end;
+}
+.container .bottom_list ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px auto;
+  list-style-type: '-    ';
+}
+.container .bottom_list .listB {
+  margin-left: 18%;
+}
+.container .interest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  background-color: #e2e2e4;
+}
+.container .interest h1 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+  align-content: flex-start;
+}
+.container .interest h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: 2;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  width: 70%;
+}
