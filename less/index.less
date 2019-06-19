@@ -64,6 +64,15 @@ html, body {
 	margin-left: 25%;
 }
 
+.content_layout {
+	display: flex;
+	flex-direction: row;
+	.header_font();
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 20%;
+}
+
 @background_color: #f9c22e;
 // color => Saffron
 @h1_text_color: #0c090d;
@@ -196,12 +205,7 @@ html, body {
 		margin-bottom: 50px;
 
 		h1 {
-			display: flex;
-			flex-direction: row;
-			.header_font();
-			margin-top: 5%;
-			margin-left: 5%;
-			width: 20%;
+			.content_layout();
 		}
 
 		.experience_intro {
@@ -215,12 +219,13 @@ html, body {
 		.la_sonrisa_foods {
 			.secondary_header();
 			.layout();
+			height: 0%;
 		}
 
 		.position {
 			.script_font();
 			.layout();
-			margin-bottom: 10px;
+
 		}
 
 		.description {
@@ -231,6 +236,89 @@ html, body {
 		}
 
 	}
+
+	.skills {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100px;
+		margin-bottom: 50px;
+	}
+
+	h1 {
+		.content_layout
+	}
+
+	.skills_intro {
+		.script_font();
+		line-height: 2;
+		margin-top: 5%;
+		margin-bottom: 20px;
+		width: 70%;
+	}
+
+	.skill_types {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 20px;
+		margin-left: 21%;
+		margin-top: 0%;
+
+		h2 {
+			.content_layout();
+			margin-top: 0%;
+		}
+
+	}
+
+	.bottom_list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 180px;
+		margin-left: 27%;
+
+
+
+		ul {
+			align-self: flex-end;
+			li{
+				.secondary_header();
+				list-style-type: '-    '
+			}
+		}
+
+		.listB {
+			margin-left: 18%
+		}
+
+	}
+
+	.interest {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100px;
+		margin-bottom: 10px;
+
+		h1 {
+			.content_layout();
+		}
+
+		h2 {
+			.script_font();
+			line-height: 2;
+			margin-top: 5%;
+			margin-bottom: 20px;
+			width: 70%;
+		}
+	}
+
 }
 
 

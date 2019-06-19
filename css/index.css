@@ -138,6 +138,17 @@ body {
   width: 75%;
   margin-left: 25%;
 }
+.content_layout {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+}
 .header_font {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6em;
@@ -285,6 +296,7 @@ body {
   margin: 10px auto;
   width: 75%;
   margin-left: 25%;
+  height: 0%;
 }
 .container .experience .position {
   font-family: 'Playfair Display', serif;
@@ -293,7 +305,6 @@ body {
   font-style: italic;
   width: 75%;
   margin-left: 25%;
-  margin-bottom: 10px;
 }
 .container .experience .description {
   width: 75%;
@@ -302,4 +313,105 @@ body {
   font-size: 0.6em;
   letter-spacing: 1px;
   line-height: 1.4;
+}
+.container .skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+}
+.container h1 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+}
+.container .skills_intro {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: 2;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.container .skill_types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20px;
+  margin-left: 21%;
+  margin-top: 0%;
+}
+.container .skill_types h2 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+  margin-top: 0%;
+}
+.container .bottom_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 180px;
+  margin-left: 27%;
+}
+.container .bottom_list ul {
+  align-self: flex-end;
+}
+.container .bottom_list ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px auto;
+  list-style-type: '-    ';
+}
+.container .bottom_list .listB {
+  margin-left: 18%;
+}
+.container .interest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.container .interest h1 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 20%;
+}
+.container .interest h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  font-style: italic;
+  line-height: 2;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  width: 70%;
 }
